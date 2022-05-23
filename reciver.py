@@ -29,9 +29,9 @@ def main():
         )
     )
     channel = connection.channel()
-    channel.queue_declare(queue='hellow')
+    channel.queue_declare(queue='hell')
     first_row = True
-    channel.basic_consume('hellow', callback, auto_ack=True)
+    channel.basic_consume('hell', callback, auto_ack=True)
     print("[x] Waiting for messages. To exit press CTRL+C")
     channel.start_consuming()
 

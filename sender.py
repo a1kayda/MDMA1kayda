@@ -11,19 +11,19 @@ def main():
         )
     channel = connection.channel()
 
-    channel.queue_declare(queue='hellow')
+    channel.queue_declare(queue='hell')
     try:
-        with open('data/test_file.csv') as fp:
+        with open('data/autoencoder_ch1X.csv') as fp:
             for line in fp:
                 message = line
                 channel.basic_publish(exchange='',
-                                      routing_key='hellow',
+                                      routing_key='hell',
                                       body=message)
 
                 print('[*] Now published: ' + message)
 
                 # Publish a row to RabbitMQ every 3 seconds
-                sleep(3)
+                sleep(1)
 
         connection.close()
     except TimeoutError:
