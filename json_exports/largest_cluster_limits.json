@@ -1,1 +1,1 @@
-{"('CPU', 'min')":21,"('CPU', 'max')":28,"('Memory', 'min')":28,"('Memory', 'max')":33,"('Disk', 'min')":27,"('Disk', 'max')":31}
+{"(0, 'min')":null,"(0, 'max')":null,"(1, 'min')":null,"(1, 'max')":null,"(2, 'min')":null,"(2, 'max')":null,"(3, 'min')":null,"(3, 'max')":null,"('1_feature', 'min')":-0.6122977953,"('1_feature', 'max')":0.3101026688,"('2_feature', 'min')":-0.5469394986,"('2_feature', 'max')":0.7156771613,"('3_feature', 'min')":-0.5616366799,"('3_feature', 'max')":0.4942926617}

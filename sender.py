@@ -13,7 +13,7 @@ def main():
 
     channel.queue_declare(queue='hell')
     try:
-        with open('data/autoencoder_ch1X.csv') as fp:
+        with open('data/X_3.txt') as fp:
             for line in fp:
                 message = line
                 channel.basic_publish(exchange='',
@@ -23,7 +23,7 @@ def main():
                 print('[*] Now published: ' + message)
 
                 # Publish a row to RabbitMQ every 3 seconds
-                sleep(1)
+                #sleep(0.2)
 
         connection.close()
     except TimeoutError:

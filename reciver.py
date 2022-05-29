@@ -9,9 +9,9 @@ def send_to_incremental_dbscan(message):
     # This is going to be done only the first few times until the DBSCAN creates the first clusters.
     # The initial data will be used to feed the DBSCAN in order to create the first clusters and then
     # the Incremental DBSCAN will be used.
-    if batch < 10:
+    if batch < 500:
         dbscan.batch_dbscan()
-    if batch >= 10:
+    if batch >= 500:
         dbscan.incremental_dbscan_()
 
 
