@@ -1,7 +1,11 @@
+## this is incremental DBSCAN for data with 3 features
+
 #
 
-brew service stop rabbitmq
-brew service info rabbitmq
-brew service start rabbitmq
+commands to launch queue
+
+brew service stop rabbitmq\\
+brew service info rabbitmq\\
+brew service start rabbitmq\\
 
 #
